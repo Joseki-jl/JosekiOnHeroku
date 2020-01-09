@@ -1,7 +1,7 @@
 # Deploying Joseki APIs on Heroku
 
 This example roughly follows the instructions 
-[here](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml).  
+[here](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml).  You can see a deployed instance of it [here](https://joseki-demo.herokuapp.com/).  (This is hosted on Heroku's free tier, it may take a few seconds to respond if no one has used it in a while).  
 
 ## Initial setup
 
