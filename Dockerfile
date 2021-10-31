@@ -1,4 +1,4 @@
-FROM julia:1.3
+FROM julia:1.6
 
 # Unlike the dockerfile in the examples folder, this mimics the typical flow for a project that
 # uses Joseki. 
@@ -15,7 +15,7 @@ RUN chown myuser:myuser -R *
 USER myuser
 
 # Install dependencies
-RUN julia --project -e 'using Pkg; pkg"instantiate"; pkg"precompile"'
+RUN julia --project -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
 ENV JULIA_DEPOT_PATH "/home/myuser/.julia"
 
 # Briefly run the server to trigger precompilation
